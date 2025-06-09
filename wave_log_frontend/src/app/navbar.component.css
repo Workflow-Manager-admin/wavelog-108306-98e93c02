@@ -1,0 +1,101 @@
+.wavelog-navbar {
+  --nav-bg: linear-gradient(92deg,#3A8DDE 77%, #20B2AA 130%);
+  --nav-surface: var(--color-surface, #f0f8ff);
+  --nav-pill: #e3f2fd;
+  --nav-border: #94cdf9;
+  --nav-glow: 0 2px 18px #3a8dde24, 0 1px 8px #20b2aa26;
+  --nav-active: #20B2AA;
+  display: flex;
+  justify-content: center;
+  gap: 1.0em;
+  padding: 0.37em 0.25em 0.39em 0.25em;
+  background: var(--nav-bg);
+  box-shadow: 0 2px 24px #a0c7e150;
+  border-bottom: 2px solid var(--nav-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.53em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.13em;
+  padding: 0.55em 1.2em 0.53em 1.0em;
+  border-radius: 3em;
+  color: var(--color-primary, #3A8DDE);
+  background: var(--nav-surface);
+  box-shadow: 0 1px 7px #cde6fd46;
+  min-width: 0;
+  transition: 
+    color 0.16s, 
+    box-shadow 0.15s, 
+    background 0.15s;
+  border: 2px solid transparent;
+  margin: 0 0.12em;
+  position: relative;
+}
+.nav-link.active,
+.nav-link.router-link-active {
+  color: #fff;
+  background: var(--nav-active, #20B2AA);
+  box-shadow: var(--nav-glow);
+  border: 2px solid #3A8DDE;
+  z-index: 2;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #fff;
+  background: linear-gradient(92deg,#20B2AA 66%, #3A8DDE 120%);
+  border: 2px solid #20B2AA;
+  box-shadow: 0 4px 20px #20b2aa2d, 0 0px 0px #cde6fd06;
+  outline: none;
+}
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--nav-pill);
+  box-shadow: 0 1px 8px #3a8dde14;
+  margin-right: 0.13em;
+  transition: background 0.17s;
+}
+.nav-link.active .nav-icon,
+.nav-link.router-link-active .nav-icon {
+  background: #fff;
+}
+.nav-link:focus .nav-icon,
+.nav-link:hover .nav-icon {
+  background: #a8e3e7;
+}
+.nav-label {
+  display: inline-block;
+  margin-left: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .wavelog-navbar {
+    gap: 0.4em;
+    padding: 0.23em 0.02em;
+    font-size: 0.98em;
+  }
+  .nav-link {
+    font-size: 0.95em;
+    padding: 0.32em 0.85em 0.32em 0.7em;
+  }
+  .nav-icon { width: 27px; height: 27px; }
+}
+@media (max-width: 540px) {
+  .wavelog-navbar {
+    justify-content: stretch;
+  }
+  .nav-label { display: none; }
+  .nav-link {
+    min-width: 38px;
+    padding: 0.24em 0.21em;
+    justify-content: center;
+  }
+}
