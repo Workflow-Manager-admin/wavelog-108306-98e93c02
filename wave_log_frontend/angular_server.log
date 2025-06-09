@@ -8,212 +8,6 @@ The "disableHostCheck" option will not be used because it is not supported by th
 ✔ Building...
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
-main.js              | main             | 108.98 kB | 
-polyfills.js         | polyfills        |  90.20 kB | 
-styles.css           | styles           |   3.55 kB | 
-
-                     | Initial total    | 202.74 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-RA3OQYVE.mjs   | -                | 109.43 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [3.075 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.810 seconds]
-
-✘ [ERROR] NG8001: 'wavelog-navbar' is not a known element:
-1. If 'wavelog-navbar' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
-2. If 'wavelog-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
-
-    src/app/app.component.html:114:2:
-      114 │   <wavelog-navbar></wavelog-navbar>
-          ╵   ~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:9:15:
-      9 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-main.js              | main             | 116.81 kB | 
-polyfills.js         | polyfills        |  90.20 kB | 
-styles.css           | styles           |   3.55 kB | 
-
-                     | Initial total    | 210.56 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-5OI2S6QD.mjs   | -                | 117.27 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [0.429 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        | 116.82 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-GSFRLMTA.mjs  | -           | 117.27 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.266 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        | 116.86 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-XJAXRFCY.mjs  | -           | 117.31 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.328 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-main.js              | main             | 116.86 kB | 
-polyfills.js         | polyfills        |  90.20 kB | 
-styles.css           | styles           |   3.55 kB | 
-
-                     | Initial total    | 210.61 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-XJAXRFCY.mjs   | -                | 117.31 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [0.163 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.285 seconds]
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:5:24:
-      5 │     [ngClass]="{active: isActive('/')}"
-        ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:21:24:
-      21 │     [ngClass]="{active: isActive('/log')}"
-         ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:40:24:
-      40 │     [ngClass]="{active: isActive('/dashboard')}"
-         ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.119 seconds]
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:20:24:
-      20 │     [ngClass]="{active: isActive('/log')}"
-         ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:39:24:
-      39 │     [ngClass]="{active: isActive('/dashboard')}"
-         ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.194 seconds]
-
-✘ [ERROR] NG9: Property 'isActive' does not exist on type 'NavbarComponent'. [plugin angular-compiler]
-
-    src/app/navbar.component.html:38:24:
-      38 │     [ngClass]="{active: isActive('/dashboard')}"
-         ╵                         ~~~~~~~~
-
-  Error occurs in the template of component NavbarComponent.
-
-    src/app/navbar.component.ts:10:15:
-      10 │   templateUrl: './navbar.component.html',
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
 main.js              | main             | 115.94 kB | 
 polyfills.js         | polyfills        |  90.20 kB | 
 styles.css           | styles           |   3.55 kB | 
@@ -228,7 +22,7 @@ chunk-GOEIX4M5.mjs   | -                | 116.39 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.163 seconds]
+Application bundle generation complete. [3.249 seconds]
 
 ▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
 
@@ -237,4 +31,167 @@ Application bundle generation complete. [0.163 seconds]
         ╵                                           ~~~~~~~
 
 
-Page reload sent to client(s).
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.010 seconds]
+
+▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
+
+    src/app/navbar.component.ts:9:42:
+      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
+        ╵                                           ~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
+
+    src/styles.css:26:17:
+      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
+
+    src/styles.css:27:24:
+      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
+
+    src/styles.css:28:21:
+      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.007 seconds]
+
+▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
+
+    src/app/navbar.component.ts:9:42:
+      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
+        ╵                                           ~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
+
+    src/styles.css:26:17:
+      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
+
+    src/styles.css:27:24:
+      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
+
+    src/styles.css:28:21:
+      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.008 seconds]
+
+▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
+
+    src/app/navbar.component.ts:9:42:
+      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
+        ╵                                           ~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
+
+    src/styles.css:26:17:
+      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
+
+    src/styles.css:27:24:
+      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
+
+    src/styles.css:28:21:
+      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.008 seconds]
+
+▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
+
+    src/app/navbar.component.ts:9:42:
+      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
+        ╵                                           ~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
+
+    src/styles.css:26:17:
+      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
+
+    src/styles.css:27:24:
+      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
+
+    src/styles.css:28:21:
+      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.006 seconds]
+
+▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
+
+    src/app/navbar.component.ts:9:42:
+      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
+        ╵                                           ~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
+
+    src/styles.css:26:17:
+      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
+
+    src/styles.css:27:24:
+      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
+
+    src/styles.css:28:21:
+      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

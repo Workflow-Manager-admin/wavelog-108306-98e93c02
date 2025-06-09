@@ -21,6 +21,11 @@
   --shadow-ocean: 0 2px 24px #a0c7e1a8;
   --shadow-surf: 0 2px 12px #a2d2f3;
   --shadow-card: 0 1px 12px #aee1f955;
+
+  /* NEW: Responsive background image set for hero, main, and forms. */
+  --bg-hero: url('./assets/bg/beach-waves.jpg');
+  --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
+  --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
 }
 
 /* Font family and base typography - unify for oceanic UIs */
@@ -32,6 +37,64 @@ body, input, select, textarea, button {
   line-height: 1.47;
 }
 
+/* Oceanic panoramic global background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+        180deg,
+        rgba(58, 141, 222, 0.35) 0%,
+        rgba(32, 178, 170, 0.21) 100%
+      ),
+      linear-gradient(
+        120deg,
+        rgba(245, 233, 208, 0.18) 0%,
+        rgba(32, 178, 170, 0.10) 100%
+      ),
+      var(--bg-hero) center center / cover no-repeat,
+      var(--color-background);
+  /* Fallback for browsers if image fails */
+  background-blend-mode: overlay, lighten, normal;
+}
+/* Subtle animated overlay waves */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 70% 10%, rgba(32, 178, 170, 0.14) 0%, rgba(58, 141, 222, 0.10) 120%);
+  opacity: 0.96;
+}
+
+@media (max-width: 700px) {
+  body {
+    background:
+      linear-gradient(
+        190deg,
+        rgba(32, 178, 170, 0.19) 18%,
+        rgba(58, 141, 222, 0.14) 100%
+      ),
+      var(--bg-surf-lineup) center 30% / cover no-repeat,
+      var(--color-background);
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background:
+      linear-gradient(
+        190deg, rgba(32, 178, 170, 0.20) 5%, rgba(58, 141, 222, 0.14) 80%
+      ),
+      var(--bg-deepblue) center 10% / cover no-repeat,
+      var(--color-background);
+    }
+}
+/* Prevent image tiling/scaling issues and ensure bg covers */
+body, .main-bg, .background-img {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center;
+}
+
 ::-webkit-input-placeholder { color: #7891ad; opacity: 1; }
 ::-moz-placeholder { color: #7891ad; opacity: 1; }
 :-ms-input-placeholder { color: #7891ad; opacity: 1; }
@@ -39,7 +102,37 @@ body, input, select, textarea, button {
 
 /* Reusable utility classes */
 .bg-ocean {
-  background: radial-gradient(circle at 70% 15%, var(--color-primary) 8%, var(--color-surface) 65%), var(--color-sand);
+  background: linear-gradient(
+    120deg,
+    rgba(58,141,222,0.18) 0%,
+    rgba(32,178,170,0.18) 100%
+  ), var(--bg-hero) center/cover no-repeat;
+}
+.bg-surf-lineup {
+  background: linear-gradient(
+    120deg,
+    rgba(32,178,170,0.13) 40%,
+    rgba(58,141,222,0.1) 100%
+  ), var(--bg-surf-lineup) center/cover no-repeat;
+}
+.bg-deepblue {
+  background: linear-gradient(
+    90deg,
+    rgba(32,178,170,0.10) 70%,
+    rgba(58,141,222,0.16) 100%
+  ), var(--bg-deepblue) center/cover no-repeat;
+}
+.bg-overlay-dark {
+  position: relative;
+}
+.bg-overlay-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10,30,60,0.32);
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
 }
 .shadow-ocean { box-shadow: var(--shadow-ocean); }
 .shadow-surf { box-shadow: var(--shadow-surf); }
@@ -48,6 +141,11 @@ body, input, select, textarea, button {
   border-radius: 19px;
   box-shadow: var(--shadow-card);
   border: 2px solid var(--color-border);
+}
+.grad-overlay {
+  background: linear-gradient(
+    135deg, rgba(58,141,222,0.13) 8%, rgba(245,233,208,0.09) 80%
+  );
 }
 .text-primary { color: var(--color-primary); }
 .text-accent { color: var(--color-accent); }
@@ -59,7 +157,7 @@ body, input, select, textarea, button {
 .text-mood-relaxed { color: var(--color-mood-relaxed);}
 .text-mood-tired { color: var(--color-mood-tired);}
 .text-mood-frustrated { color: var(--color-mood-frustrated);}
-
+/* BUTTON, CARD, INTERACTIVE MICRO-INTERACTIONS */
 .btn-main {
   background: linear-gradient(92deg, var(--color-primary) 60%, var(--color-accent) 120%);
   color: #fff;
@@ -68,22 +166,79 @@ body, input, select, textarea, button {
   border-radius: 18px;
   padding: 0.7em 1.5em;
   cursor: pointer;
-  box-shadow: 0 2px 12px #92dcff55;
-  transition: background 0.20s;
+  box-shadow: 0 2px 14px #92dcff66;
+  transition: 
+    background 0.18s,
+    box-shadow 0.17s,
+    transform 0.11s;
+  outline: none;
+  position: relative;
 }
 .btn-main:hover, .btn-main:focus {
   background: linear-gradient(92deg, #299ee0 60%, #17aab0 120%);
+  box-shadow: 0 4px 24px #20b2aa30, 0 1px 6px #92dcff55;
+  transform: scale(1.024) translateY(-1.5px);
+  outline: 3px solid #18436655;
+  z-index: 2;
 }
+
 .btn-outline {
   background: var(--color-sand);
   color: var(--color-text);
   border: 1.5px solid var(--color-border);
   border-radius: 17px;
   font-weight: 600;
+  transition:
+    background 0.14s,
+    border 0.14s,
+    color 0.13s,
+    box-shadow 0.16s;
+  box-shadow: 0 2px 10px #20b2aa13;
 }
 .btn-outline:hover, .btn-outline:focus {
   background: #f8efe2;
+  color: var(--color-accent);
+  border-color: var(--color-primary);
 }
+
+.card-hover,
+.session-card,
+.stat-card,
+.surface-card {
+  transition:
+    box-shadow 0.17s,
+    border 0.14s,
+    transform 0.13s;
+}
+.card-hover:hover,
+.session-card:hover,
+.stat-card:hover,
+.surface-card:hover,
+.card-hover:focus,
+.session-card:focus,
+.stat-card:focus,
+.surface-card:focus {
+  box-shadow: 0 6px 24px #2e87de50, 0 1.5px 11px #20b2aa33;
+  border-color: var(--color-accent);
+  transform: translateY(-3.5px) scale(1.015);
+  outline: 2px solid #3a8dde55;
+  z-index: 2;
+}
+
+input, select, textarea, button {
+  transition: 
+    background 0.17s, 
+    border 0.12s, 
+    color 0.11s, 
+    box-shadow 0.18s;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 2.5px solid #3A8DDE99;
+  box-shadow: 0 0 0 5px #3A8DDE22;
+  z-index: 3;
+}
+
 
 /* Reusable icon token example stylings */
 .icon-token {
@@ -116,6 +271,9 @@ body, input, select, textarea, button {
   fill: var(--color-primary);
 }
 
+/* Accessibility: Use .bg-overlay-dark on card/section backgrounds with busy RGB images for text contrast enhancement.
+ * Example: <div class="bg-ocean bg-overlay-dark surface-card"> ... </div>
+ */
 .sr-only {
   position: absolute !important;
   left: -9999px !important;
