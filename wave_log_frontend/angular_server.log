@@ -9,54 +9,22 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  22.59 kB | 
+main.js              | main             |   9.52 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 112.88 kB
+                     | Initial total    |  99.81 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+chunk-6NAGAI3O.mjs   | -                |   9.96 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.255 seconds]
+Application bundle generation complete. [2.277 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  20.85 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-6JH443JQ.mjs  | -           |  21.29 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.432 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |   9.52 kB | 
-
-
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-6NAGAI3O.mjs  | -           |   9.96 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
-
-Application bundle generation complete. [0.253 seconds]
-
-Page reload sent to client(s).
