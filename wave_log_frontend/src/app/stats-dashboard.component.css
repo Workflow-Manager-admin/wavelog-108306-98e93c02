@@ -1,0 +1,136 @@
+.stats-dashboard-main {
+  max-width: 960px;
+  margin: 2.3rem auto;
+  padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+  background: linear-gradient(120deg,#e3f2fd 89%, #F5E9D0 100%);
+  border-radius: 22px;
+  box-shadow: 0 2px 22px #73b8e166;
+  border: 2.5px solid #c8e1f6;
+}
+
+.stats-title {
+  text-align: left;
+  color: #3A8DDE;
+  font-weight: 800;
+  font-size: 2.1rem;
+  margin-bottom: 2.0rem;
+  margin-left: 0.3rem;
+  letter-spacing: -0.03em;
+  font-family: 'Inter Tight', 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+.wave-header {
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 0.1em;
+  opacity: 0.68;
+}
+.stats-panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.stat-card {
+  flex: 1 1 262px;
+  background: linear-gradient(116deg, #e3f2fd 80%, #F5E9D0 100%);
+  border-radius: 19px;
+  box-shadow: 0 2px 18px #AEE1F933;
+  border: 2px solid #bedcf3;
+  min-width: 250px;
+  max-width: 320px;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 1.2rem 1.55rem 1.2rem;
+  color: #184366;
+}
+
+.ocean-shadow {
+  box-shadow: 0 2px 19px #20b2aa44;
+}
+
+.stat-card h3 {
+  font-size: 1.21rem;
+  color: #20B2AA;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.007em;
+  display:flex;
+  align-items:center;
+  gap:0.37em;
+}
+
+/* Bar chart */
+.bar-chart {
+  width: 100%;
+  height: 118px;
+  margin-top: 0.3em;
+  margin-bottom: 0.15em;
+}
+.bar-chart rect {
+  filter: drop-shadow(0 1px 13px #cde6fd11);
+}
+.bar-chart text {
+  paint-order: stroke fill;
+  dominant-baseline: middle;
+}
+
+/* Pie chart */
+.pie-chart {
+  display: block;
+  margin: 0.5em auto 0.05em auto;
+  width: 134px;
+  height: 134px;
+}
+.pie-chart .legend rect {
+  rx: 2px;
+}
+.pie-chart .legend text {
+  font-size: 0.94em;
+  dominant-baseline: middle;
+  alignment-baseline: middle;
+}
+
+/* Mood trend chart */
+.trend-chart {
+  margin-top: -0.2em;
+  margin-bottom: 0.1em;
+  width: 100%;
+  height: 118px;
+}
+.trend-chart polyline {
+  filter: url(#lineShadow);
+}
+.no-data {
+  margin-top: 0.8em;
+  color: #b5a488;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .stats-panels {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-dashboard-main {
+    border-radius: 7vw;
+    padding: 0.2rem 0.03rem 1.6rem 0.03rem;
+  }
+  .stats-title {
+    font-size: 1.31rem;
+    margin-bottom: 1rem;
+  }
+  .stat-card {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1.12rem 0.5rem 1.11rem 0.5rem;
+    border-radius: 10vw;
+  }
+  .pie-chart, .trend-chart, .bar-chart { width: 99vw !important; max-width: 100vw;}
+}

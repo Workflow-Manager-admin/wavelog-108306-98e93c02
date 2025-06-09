@@ -9,20 +9,20 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  58.43 kB | 
+main.js              | main             |  74.94 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 148.73 kB
+                     | Initial total    | 165.23 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-KDPZDLZG.mjs   | -                |  58.80 kB | 
+chunk-DFDLHQAP.mjs   | -                |  75.30 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.759 seconds]
+Application bundle generation complete. [2.834 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -32,16 +32,16 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names       |  Raw size
-main.js             | main        |  70.54 kB | 
+main.js             | main        |  77.59 kB | 
 
 
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-J6ILSG35.mjs  | -           |  70.90 kB | 
+chunk-72WVDXKC.mjs  | -           |  77.96 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
-Application bundle generation complete. [0.786 seconds]
+Application bundle generation complete. [0.667 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -49,82 +49,419 @@ Page reload sent to client(s).
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  70.54 kB | 
+main.js              | main             |  77.59 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 160.83 kB
+                     | Initial total    | 167.89 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-J6ILSG35.mjs   | -                |  70.90 kB | 
+chunk-72WVDXKC.mjs   | -                |  77.96 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.332 seconds]
+Application bundle generation complete. [0.159 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  74.84 kB | 
+Application bundle generation failed. [0.426 seconds]
+
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:18:26:
+      18 │             [attr.width]="Math.max(4, spot.count * 40)"
+         ╵                           ~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-VKGSOTYY.mjs  | -           |  75.20 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
 
-Application bundle generation complete. [0.399 seconds]
+    src/app/stats-dashboard.component.html:27:29:
+      27 │           <text [attr.x]="86+Math.max(4, spot.count * 40)" [attr.y...
+         ╵                              ~~~~
 
-Page reload sent to client(s).
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'describeArc' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:16:
+      46 │                 describeArc(70, 70, 66, boardArcStart(i), boardArc...
+         ╵                 ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcStart' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:40:
+      46 │ ...         describeArc(70, 70, 66, boardArcStart(i), boardArcEnd(i))
+         ╵                                     ~~~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcEnd' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:58:
+      46 │ ...         describeArc(70, 70, 66, boardArcStart(i), boardArcEnd(i))
+         ╵                                                       ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcLabelPos' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:52:21:
+      52 │               *ngIf="boardArcLabelPos(i) as pos"
+         ╵                      ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'MoodOrder' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:93:91:
+      93 │ ...+ y" font-size="0.92em" fill="#3A8DDE" *ngIf="j<MoodOrder.length">
+         ╵                                                    ~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'MoodOrder' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:94:14:
+      94 │             {{MoodOrder[j]}}
+         ╵               ~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'trendPoints' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:99:25:
+      99 │           [attr.points]="trendPoints()"
+         ╵                          ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:109:30:
+      109 │             [attr.cx]="48 + k*xSpacing()"
+          ╵                               ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:116:29:
+      116 │             [attr.x]="48 + k*xSpacing()"
+          ╵                              ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:125:33:
+      125 │                 [attr.x]="48 + k*xSpacing()" [attr.y]="110"
+          ╵                                  ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  74.84 kB | 
+Application bundle generation failed. [0.378 seconds]
+
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:18:26:
+      18 │             [attr.width]="Math.max(4, spot.count * 40)"
+         ╵                           ~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-DWXOZEMK.mjs  | -           |  75.21 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
 
-Application bundle generation complete. [0.269 seconds]
+    src/app/stats-dashboard.component.html:27:29:
+      27 │           <text [attr.x]="86+Math.max(4, spot.count * 40)" [attr.y...
+         ╵                              ~~~~
 
-Page reload sent to client(s).
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'describeArc' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:16:
+      46 │                 describeArc(70, 70, 66, boardArcStart(i), boardArc...
+         ╵                 ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcStart' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:40:
+      46 │ ...         describeArc(70, 70, 66, boardArcStart(i), boardArcEnd(i))
+         ╵                                     ~~~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcEnd' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:46:58:
+      46 │ ...         describeArc(70, 70, 66, boardArcStart(i), boardArcEnd(i))
+         ╵                                                       ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'boardArcLabelPos' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:52:21:
+      52 │               *ngIf="boardArcLabelPos(i) as pos"
+         ╵                      ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'MoodOrder' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:93:91:
+      93 │ ...+ y" font-size="0.92em" fill="#3A8DDE" *ngIf="j<MoodOrder.length">
+         ╵                                                    ~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'MoodOrder' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:94:14:
+      94 │             {{MoodOrder[j]}}
+         ╵               ~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'trendPoints' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:99:25:
+      99 │           [attr.points]="trendPoints()"
+         ╵                          ~~~~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:109:30:
+      109 │             [attr.cx]="48 + k*xSpacing()"
+          ╵                               ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:116:29:
+      116 │             [attr.x]="48 + k*xSpacing()"
+          ╵                              ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'xSpacing' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:125:33:
+      125 │                 [attr.x]="48 + k*xSpacing()" [attr.y]="110"
+          ╵                                  ~~~~~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  74.94 kB | 
+Application bundle generation failed. [0.422 seconds]
+
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:18:26:
+      18 │             [attr.width]="Math.max(4, spot.count * 40)"
+         ╵                           ~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-22D4ANQZ.mjs  | -           |  75.30 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
 
-Application bundle generation complete. [0.347 seconds]
+    src/app/stats-dashboard.component.html:27:29:
+      27 │           <text [attr.x]="86+Math.max(4, spot.count * 40)" [attr.y...
+         ╵                              ~~~~
 
-Page reload sent to client(s).
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names       |  Raw size
-main.js             | main        |  74.94 kB | 
+Application bundle generation failed. [0.364 seconds]
+
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/stats-dashboard.component.html:18:26:
+      18 │             [attr.width]="Math.max(4, spot.count * 40)"
+         ╵                           ~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names       |  Raw size
-chunk-DFDLHQAP.mjs  | -           |  75.30 kB | 
-server.mjs          | server      |   1.39 kB | 
-main.server.mjs     | main.server | 800 bytes | 
+✘ [ERROR] NG9: Property 'Math' does not exist on type 'StatsDashboardComponent'. [plugin angular-compiler]
 
-Application bundle generation complete. [0.264 seconds]
+    src/app/stats-dashboard.component.html:27:29:
+      27 │           <text [attr.x]="86+Math.max(4, spot.count * 40)" [attr.y...
+         ╵                              ~~~~
+
+  Error occurs in the template of component StatsDashboardComponent.
+
+    src/app/stats-dashboard.component.ts:56:15:
+      56 │   templateUrl: './stats-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+main.js              | main             |  97.97 kB | 
+polyfills.js         | polyfills        |  90.20 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 188.27 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-JQWM2DBY.mjs   | -                |  98.34 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.304 seconds]
 
 Page reload sent to client(s).
