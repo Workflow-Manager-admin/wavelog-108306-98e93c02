@@ -10,9 +10,9 @@ Browser bundles
 Initial chunk files  | Names            |  Raw size
 main.js              | main             | 115.94 kB | 
 polyfills.js         | polyfills        |  90.20 kB | 
-styles.css           | styles           |   3.55 kB | 
+styles.css           | styles           |   6.98 kB | 
 
-                     | Initial total    | 209.69 kB
+                     | Initial total    | 213.12 kB
 
 
 Server bundles      
@@ -22,7 +22,7 @@ chunk-GOEIX4M5.mjs   | -                | 116.39 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [3.249 seconds]
+Application bundle generation complete. [3.180 seconds]
 
 ▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
 
@@ -35,163 +35,3 @@ Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.010 seconds]
-
-▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
-
-    src/app/navbar.component.ts:9:42:
-      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
-        ╵                                           ~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
-
-    src/styles.css:26:17:
-      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
-
-    src/styles.css:27:24:
-      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
-         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
-
-    src/styles.css:28:21:
-      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
-         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.007 seconds]
-
-▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
-
-    src/app/navbar.component.ts:9:42:
-      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
-        ╵                                           ~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
-
-    src/styles.css:26:17:
-      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
-
-    src/styles.css:27:24:
-      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
-         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
-
-    src/styles.css:28:21:
-      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
-         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.008 seconds]
-
-▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
-
-    src/app/navbar.component.ts:9:42:
-      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
-        ╵                                           ~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
-
-    src/styles.css:26:17:
-      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
-
-    src/styles.css:27:24:
-      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
-         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
-
-    src/styles.css:28:21:
-      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
-         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.008 seconds]
-
-▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
-
-    src/app/navbar.component.ts:9:42:
-      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
-        ╵                                           ~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
-
-    src/styles.css:26:17:
-      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
-
-    src/styles.css:27:24:
-      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
-         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
-
-    src/styles.css:28:21:
-      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
-         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.006 seconds]
-
-▲ [WARNING] TS-998113: NgClass is not used within the template of NavbarComponent [plugin angular-compiler]
-
-    src/app/navbar.component.ts:9:42:
-      9 │   imports: [RouterLink, RouterLinkActive, NgClass],
-        ╵                                           ~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/beach-waves.jpg" [plugin angular-css-resource]
-
-    src/styles.css:26:17:
-      26 │   --bg-hero: url('./assets/bg/beach-waves.jpg');
-         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/surf-lineup.jpg" [plugin angular-css-resource]
-
-    src/styles.css:27:24:
-      27 │   --bg-surf-lineup: url('./assets/bg/surf-lineup.jpg');
-         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./assets/bg/deepblue-ocean.jpg" [plugin angular-css-resource]
-
-    src/styles.css:28:21:
-      28 │   --bg-deepblue: url('./assets/bg/deepblue-ocean.jpg');
-         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
