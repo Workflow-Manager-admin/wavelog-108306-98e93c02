@@ -1,0 +1,152 @@
+<!-- 
+  WaveLog Main Container - Welcome & Project Overview 
+  Oceanic theme · Surf session logger · Stats dashboard · Reminders · Filtering 
+-->
+<style>
+  :host {
+    --primary: #3A8DDE;
+    --secondary: #F5E9D0;
+    --accent: #20B2AA;
+    --background-dark: #e3f2fd;
+    --surface: #f0f8ff;
+    --text: #184366;
+    --sand: #f5e9d0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: block;
+    background: radial-gradient(circle at 70% 15%, var(--primary) 8%, var(--surface) 65%), var(--sand);
+  }
+
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3.5rem 1.5rem 1rem;
+    box-sizing: border-box;
+    background: none;
+  }
+
+  .wavelog-hero-logo {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    box-shadow: 0 6px 24px 0 #a0c7e1, 0 3px 7px 0 #cde6fd;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(150deg, var(--primary), var(--accent) 70%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .wavelog-hero-logo svg {
+    width: 56px;
+    height: 56px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.9rem;
+    color: var(--primary);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    text-shadow: 1px 2px 8px #cde6fd77;
+    font-family: 'Inter Tight', 'Segoe UI', Arial, sans-serif;
+  }
+  .subtitle {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+  }
+  .overview-card {
+    max-width: 425px;
+    width: 100%;
+    background: var(--surface);
+    border-radius: 18px;
+    box-shadow: 0 1px 12px #AEE1F955;
+    padding: 2rem 1.25rem 1.6rem;
+    color: var(--text);
+    margin-bottom: 2.5rem;
+    text-align: left;
+    font-size: 1.04rem;
+    border: 2px solid #c8e1f6;
+  }
+  .features-title {
+    margin: 1.5rem 0 0.7rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+  .feature-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .feature-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.7em;
+  }
+  .feature-list svg {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.7em;
+    margin-top: 0.2em;
+    fill: var(--accent);
+  }
+  .note {
+    color: #6789aa;
+    margin-top: 1.5rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+
+<main>
+  <div class="wavelog-hero-logo" title="WaveLog logo">
+    <!-- Wave (ocean) SVG icon -->
+    <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#20B2AA" opacity="0.10"/><path d="M8 44c4.5 0 7.3-2.2 9.8-4.2C21.9 37 24 35 28 35c5 0 7 3.7 11 3.7 5.6 0 8.7-8.8 19-8.8-6.1 8.6-13.1 17.1-27.1 17.1C21 47 14.5 44 8 44Z" fill="#3A8DDE"/><path d="M19 42c2-1 5-4 10-4 4 0 8.8 2.6 13-3.1C45.2 41.8 39.5 49 32 49c-6 0-10-4.5-13-7Z" fill="#20B2AA"/><ellipse stroke="#3A8DDE" stroke-width="2" opacity="0.18" cx="32" cy="44" rx="17.5" ry="6.5"/></svg>
+  </div>
+  <h1>Welcome to WaveLog</h1>
+  <div class="subtitle">Surf. Log. Analyze. Repeat.</div>
+  <div class="overview-card">
+    WaveLog is your colorful, ocean-inspired surf logging companion.<br/>
+    <strong>Effortlessly log your sessions</strong>, view details, analyze trends, and stay motivated—all in a beautiful beach-themed interface.<br/><br/>
+    <div class="features-title">What can you do?</div>
+    <ul class="feature-list">
+      <li>
+        <svg viewBox="0 0 20 20"><path d="M6.5 16c-2-3-3-5.49-3-7.5A6.5 6.5 0 0120 8.27V10c0 3.59-2.91 6.5-6.5 6.5-1.54 0-2.97-.51-4.12-1.47L8 16H6.5Z" fill="#20B2AA"/></svg>
+        Log new surf sessions: spot, board, mood, conditions, and more.
+      </li>
+      <li>
+        <svg viewBox="0 0 20 20"><path d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm1 13H9v-2h2v2zm.07-7.75l-.9.92C9.45 8.9 9 9.5 9 11h2v-.5c0-.28.11-.53.29-.71l1.2-1.2C12.68 8.21 13 7.7 13 7c0-.83-.67-1.5-1.5-1.5S10 6.17 10 7h2c0-.28-.22-.5-.5-.5s-.5.22-.5.5c0 .28.22.5.5.5.28 0 .5-.22.5-.5 0-.28-.22-.5-.5-.5-.2 0-.37.12-.46.29z" fill="#20B2AA"/></svg>
+        Browse & filter your session history as beautiful cards.
+      </li>
+      <li>
+        <svg viewBox="0 0 20 20"><path d="M3 17.25L17 17.25M3 8.75L17 8.75M17 5.75V4.25C17 3.00736 15.9926 2 14.75 2H5.25C4.00736 2 3 3.00736 3 4.25V5.75M3 14.25V15.75C3 16.9926 4.00736 18 5.25 18H14.75C15.9926 18 17 16.9926 17 15.75V14.25" stroke="#20B2AA" stroke-width="2" fill="none"/></svg>
+        View detailed session insights; edit or delete anytime.
+      </li>
+      <li>
+        <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#20B2AA"/><path d="M10 4v6l4 2" stroke="#fff" stroke-width="2" fill="none"/></svg>
+        Analyze your surfing stats with simple, colorful charts.
+      </li>
+      <li>
+        <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 00-8 8h1.5a6.5 6.5 0 0113 0H18a8 8 0 00-8-8z" fill="#20B2AA"/><path d="M7 13l-2.5 2.5M3 14.5L7 11" stroke="#fff" stroke-width="2" fill="none"/></svg>
+        Get gentle reminders to log your surf sessions daily.
+      </li>
+    </ul>
+    <div class="note">
+      🌊 Ready to ride a new digital wave?<br />
+      Use the "+ Log New Session" button and dive into your surf journey!
+    </div>
+  </div>
+  <router-outlet />
+</main>
