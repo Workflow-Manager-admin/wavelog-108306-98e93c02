@@ -117,6 +117,31 @@
   </div>
   <h1>Welcome to WaveLog</h1>
   <div class="subtitle">Surf. Log. Analyze. Repeat.</div>
+  <!-- Reminder toggle/permission UI -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.6rem;">
+    <label style="font-size: 1.08rem; color: var(--primary); font-weight: 500; display:flex; align-items:center; gap:0.37em;">
+      <input type="checkbox"
+             [checked]="reminderEnabled"
+             (change)="onReminderToggle($event)"
+             aria-label="Enable daily reminder notification"
+             style="margin-right:0.4em; width: 1.2em; height: 1.2em;"
+      />
+      <span>
+        Daily Reminder
+        <span title="This sends you a browser notification at 6pm to remind you to log a surf session.">🔔</span>
+      </span>
+    </label>
+    <button *ngIf="!reminderEnabled || notificationPermission !== 'granted'"
+      (click)="askNotificationPermission()"
+      [disabled]="notificationPermission === 'granted' || permissionRequesting"
+      style="margin-left:0.8em; background: var(--accent); color:#fff; border:none; border-radius:15px; padding:0.34em 1.05em; font-size:1em;">
+      Enable Notifications
+    </button>
+  </div>
+  <div *ngIf="notificationExplainMessage"
+       style="margin-bottom:0.8em; color: #a14343; text-align:center; font-size:0.99em;">
+    {{ notificationExplainMessage }}
+  </div>
   <div class="overview-card">
     WaveLog is your colorful, ocean-inspired surf logging companion.<br/>
     <strong>Effortlessly log your sessions</strong>, view details, analyze trends, and stay motivated—all in a beautiful beach-themed interface.<br/><br/>
