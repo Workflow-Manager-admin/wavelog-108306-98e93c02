@@ -1,0 +1,205 @@
+.session-history-container {
+  max-width: 550px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem 2rem;
+  background: var(--surface, #f0f8ff);
+  border-radius: 20px;
+  box-shadow: 0 2px 24px #b5e2fc55;
+  border: 2px solid #c8e1f6;
+}
+
+.session-history-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.log-btn {
+  background: linear-gradient(92deg, #3A8DDE 60%, #20B2AA 120%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  border-radius: 35px;
+  box-shadow: 0 2px 12px #92dcff50;
+  border: none;
+  margin-bottom: 0.7em;
+  margin-right: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+.log-btn .plus {
+  font-size: 1.4em;
+  margin-right: 0.18em;
+  font-weight: 900;
+  line-height: 1;
+}
+.log-btn:hover {
+  background: linear-gradient(92deg, #299ee0 60%, #17aab0 120%);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 0 1.2em 0;
+  align-items: center;
+  justify-content: start;
+  padding: 0.5rem 0.2rem 0.3rem 0.2rem;
+}
+
+.filter-controls select {
+  padding: 0.37em 2.1em 0.37em 0.9em;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background: #e3f2fd;
+  border: 1.5px solid #b1d4f3;
+  appearance: none;
+  min-width: 110px;
+  color: #245e97;
+  font-weight: 500;
+  margin: 0;
+  transition: border 0.13s;
+}
+.filter-controls select:focus {
+  border-color: #3A8DDE;
+  outline: none;
+}
+.reset-btn {
+  padding: 0.35em 1.2em;
+  color: #fff;
+  background: #20B2AA;
+  border-radius: 14px;
+  border: none;
+  margin-left: 0.1em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 1px 3px #b0dee090;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.reset-btn:hover { background: #2caa9e; }
+
+.sessions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.session-card {
+  background: linear-gradient(120deg, #e3f2fd 88%, #F5E9D0 100%);
+  border-radius: 22px;
+  box-shadow: 0 2px 18px #AEE1F950;
+  margin-bottom: 1.13rem;
+  padding: 1.13em 1.16em 1.05em;
+  cursor: pointer;
+  border: 2px solid #b7d9f7;
+  transition: border 0.16s, box-shadow 0.16s, transform 0.13s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28em;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+}
+.session-card:hover,
+.session-card:focus {
+  border-color: #3A8DDE;
+  box-shadow: 0 6px 18px #93daf0cc, 0 0 0 3px #20b2aa1b;
+  transform: translateY(-2.5px) scale(1.012);
+}
+
+.session-date {
+  color: #245e97;
+  font-size: 1.09em;
+  font-weight: 600;
+  margin-bottom: 0.13em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.session-date .calendar-emoji {
+  font-size: 1.18em;
+}
+.session-spot-board {
+  font-size: 1rem;
+  color: #184366;
+  margin-bottom: 0.24em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.spot-label {
+  font-weight: bold;
+  color: #20B2AA;
+}
+.board-label {
+  font-style: italic;
+  font-weight: 500;
+  color: #357ea2;
+}
+.divider {
+  margin: 0 0.45em;
+  color: #a7bdd5;
+  font-size: 1em;
+}
+.details-row {
+  font-size: 0.97em;
+  color: #355c79;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.57em;
+}
+.waves-info {
+  font-weight: 500;
+  color: #20B2AA;
+}
+.mood-label {
+  font-weight: 500;
+  color: #3A8DDE;
+  padding-left: 0.16em;
+}
+.mood-label.mood-stoked { color: #1368ce; }
+.mood-label.mood-chill, .mood-label.mood-relaxed { color: #20B2AA; }
+.mood-label.mood-frustrated { color: #ce1313; }
+.mood-label.mood-happy { color: #cdae13; }
+.mood-label.mood-tired { color: #6f7490; }
+
+.notes {
+  font-size: 0.97em;
+  color: #276a9a;
+  margin-top: 0.18em;
+  font-style: italic;
+}
+
+.no-sessions {
+  text-align: center;
+  padding: 2.5rem 0.5rem;
+  color: #245e97;
+  font-size: 1.18rem;
+  opacity: 0.9;
+  margin-top: 2.3rem;
+}
+.no-sessions .wave-icon {
+  display: block;
+  margin: 0 auto 0.5em auto;
+  width: 39px;
+  height: 39px;
+  opacity: 0.35;
+}
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}

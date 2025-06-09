@@ -9,20 +9,20 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |   9.52 kB | 
+main.js              | main             |  14.44 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    |  99.81 kB
+                     | Initial total    | 104.74 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6NAGAI3O.mjs   | -                |   9.96 kB | 
+chunk-5QEDQJ2R.mjs   | -                |  14.82 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.509 seconds]
+Application bundle generation complete. [2.429 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -30,121 +30,152 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.299 seconds]
+Application bundle generation failed. [0.696 seconds]
 
-✘ [ERROR] TS2304: Cannot find name 'SessionHistoryComponent'. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:10:25:
-      10 │   { path: '', component: SessionHistoryComponent },
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2304: Cannot find name 'LogSessionComponent'. [plugin angular-compiler]
-
-    src/app/app.routes.ts:11:28:
-      11 │   { path: 'log', component: LogSessionComponent },
-         ╵                             ~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:22:14:
+      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2304: Cannot find name 'SessionDetailComponent'. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:36:
-      12 │   { path: 'session/:id', component: SessionDetailComponent },
-         ╵                                     ~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:26:14:
+      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2304: Cannot find name 'StatsDashboardComponent'. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:13:34:
-      13 │   { path: 'dashboard', component: StatsDashboardComponent }
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:30:14:
+      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:54:35:
+      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
+         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.168 seconds]
+Application bundle generation failed. [0.389 seconds]
 
-✘ [ERROR] Could not resolve "./session-history.component"
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:3:40:
-      3 │ import { SessionHistoryComponent } from './session-history.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./log-session.component"
-
-    src/app/app.routes.ts:4:36:
-      4 │ import { LogSessionComponent } from './log-session.component';
-        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:22:14:
+      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] Could not resolve "./session-detail.component"
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:5:39:
-      5 │ import { SessionDetailComponent } from './session-detail.component';
-        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './session-history.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:5:40:
-      5 │ import { SessionHistoryComponent } from './session-history.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:26:14:
+      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2307: Cannot find module './log-session.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:6:36:
-      6 │ import { LogSessionComponent } from './log-session.component';
-        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./stats-dashboard.component"
-
-    src/app/app.routes.ts:6:40:
-      6 │ import { StatsDashboardComponent } from './stats-dashboard.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:30:14:
+      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2307: Cannot find module './session-detail.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:7:39:
-      7 │ import { SessionDetailComponent } from './session-detail.component';
-        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './stats-dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:8:40:
-      8 │ import { StatsDashboardComponent } from './stats-dashboard.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:54:35:
+      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
+         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] Could not resolve "./session-history.component"
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.284 seconds]
 
-    src/app/app.routes.ts:3:40:
-      3 │ import { SessionHistoryComponent } from './session-history.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-
-✘ [ERROR] Could not resolve "./log-session.component"
-
-    src/app/app.routes.ts:4:36:
-      4 │ import { LogSessionComponent } from './log-session.component';
-        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:22:14:
+      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] Could not resolve "./session-detail.component"
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:5:39:
-      5 │ import { SessionDetailComponent } from './session-detail.component';
-        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./stats-dashboard.component"
-
-    src/app/app.routes.ts:6:40:
-      6 │ import { StatsDashboardComponent } from './stats-dashboard.component';
-        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/session-history.component.ts:26:14:
+      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:30:14:
+      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:54:35:
+      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
+         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.445 seconds]
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:22:14:
+      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:26:14:
+      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:30:14:
+      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
+
+    src/app/session-history.component.ts:54:35:
+      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
+         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  35.58 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 125.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-X7DAXGX6.mjs   | -                |  35.95 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.467 seconds]
+
+9:42:38 AM [vite] (ssr) ✨ new dependencies optimized: @angular/forms, rxjs
+9:42:38 AM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
