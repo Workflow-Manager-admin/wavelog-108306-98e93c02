@@ -22,9 +22,129 @@ chunk-6NAGAI3O.mjs   | -                |   9.96 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.277 seconds]
+Application bundle generation complete. [2.509 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.299 seconds]
+
+✘ [ERROR] TS2304: Cannot find name 'SessionHistoryComponent'. [plugin angular-compiler]
+
+    src/app/app.routes.ts:10:25:
+      10 │   { path: '', component: SessionHistoryComponent },
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'LogSessionComponent'. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:28:
+      11 │   { path: 'log', component: LogSessionComponent },
+         ╵                             ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'SessionDetailComponent'. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:36:
+      12 │   { path: 'session/:id', component: SessionDetailComponent },
+         ╵                                     ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'StatsDashboardComponent'. [plugin angular-compiler]
+
+    src/app/app.routes.ts:13:34:
+      13 │   { path: 'dashboard', component: StatsDashboardComponent }
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.168 seconds]
+
+✘ [ERROR] Could not resolve "./session-history.component"
+
+    src/app/app.routes.ts:3:40:
+      3 │ import { SessionHistoryComponent } from './session-history.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./log-session.component"
+
+    src/app/app.routes.ts:4:36:
+      4 │ import { LogSessionComponent } from './log-session.component';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./session-detail.component"
+
+    src/app/app.routes.ts:5:39:
+      5 │ import { SessionDetailComponent } from './session-detail.component';
+        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './session-history.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:40:
+      5 │ import { SessionHistoryComponent } from './session-history.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './log-session.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:36:
+      6 │ import { LogSessionComponent } from './log-session.component';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./stats-dashboard.component"
+
+    src/app/app.routes.ts:6:40:
+      6 │ import { StatsDashboardComponent } from './stats-dashboard.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './session-detail.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:39:
+      7 │ import { SessionDetailComponent } from './session-detail.component';
+        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './stats-dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:8:40:
+      8 │ import { StatsDashboardComponent } from './stats-dashboard.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./session-history.component"
+
+    src/app/app.routes.ts:3:40:
+      3 │ import { SessionHistoryComponent } from './session-history.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./log-session.component"
+
+    src/app/app.routes.ts:4:36:
+      4 │ import { LogSessionComponent } from './log-session.component';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./session-detail.component"
+
+    src/app/app.routes.ts:5:39:
+      5 │ import { SessionDetailComponent } from './session-detail.component';
+        ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./stats-dashboard.component"
+
+    src/app/app.routes.ts:6:40:
+      6 │ import { StatsDashboardComponent } from './stats-dashboard.component';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
