@@ -9,158 +9,6 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  14.44 kB | 
-styles.css           | styles           |  95 bytes | 
-
-                     | Initial total    | 104.74 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-5QEDQJ2R.mjs   | -                |  14.82 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [2.429 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.696 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:22:14:
-      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:26:14:
-      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:30:14:
-      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:54:35:
-      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.389 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:22:14:
-      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:26:14:
-      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:30:14:
-      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:54:35:
-      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.284 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:22:14:
-      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:26:14:
-      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:30:14:
-      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:54:35:
-      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.445 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:22:14:
-      22 │       <select [(ngModel)]="selectedSpot" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:26:14:
-      26 │       <select [(ngModel)]="selectedBoard" (change)="applyFilter()"...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:30:14:
-      30 │       <select [(ngModel)]="selectedMood" (change)="applyFilter()" ...
-         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/session-history.component.ts:54:35:
-      54 │ ...class="mood-label" [ngClass]="'mood-'+session.mood.toLowerCase()">
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
 main.js              | main             |  35.58 kB | 
 styles.css           | styles           |  95 bytes | 
 
@@ -174,8 +22,89 @@ chunk-X7DAXGX6.mjs   | -                |  35.95 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.467 seconds]
+Application bundle generation complete. [2.659 seconds]
 
-9:42:38 AM [vite] (ssr) ✨ new dependencies optimized: @angular/forms, rxjs
-9:42:38 AM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+9:42:55 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  39.30 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-C7SCZLGH.mjs  | -           |  39.67 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.557 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  39.30 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 129.60 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-C7SCZLGH.mjs   | -                |  39.67 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.195 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  53.59 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-SUUREBHA.mjs  | -           |  53.95 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.416 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  58.43 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-EZTPPZTO.mjs  | -           |  58.80 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.469 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-KDPZDLZG.mjs  | -           |  58.80 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.328 seconds]
+
 Page reload sent to client(s).

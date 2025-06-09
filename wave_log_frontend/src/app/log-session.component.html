@@ -1,0 +1,133 @@
+<!--
+  Log New Session / Edit Session Form
+  Responsive, oceanic theme. Required fields: date, spot, board, waveCount, mood.
+  Optional: notes, swell, wind, tide.
+-->
+<section class="log-session-container">
+  <h2 class="form-title">
+    {{ isEditMode ? 'Edit Surf Session' : 'Log New Surf Session' }}
+  </h2>
+  <form class="log-form" (ngSubmit)="submitForm()" autocomplete="off">
+    <div class="form-row form-date">
+      <label for="date"><span class="emoji">📅</span> Date</label>
+      <input id="date" type="date" [(ngModel)]="date" name="date" required />
+    </div>
+
+    <div class="form-row form-spot">
+      <label for="spot"><span class="emoji">🏄‍♂️</span> Surf Spot</label>
+      <select id="spot" [(ngModel)]="spot" name="spot" required>
+        <option value="" disabled selected>Select spot</option>
+        <option *ngFor="let s of surfSpots" [value]="s">{{ s }}</option>
+      </select>
+    </div>
+
+    <div class="form-row form-board">
+      <label for="board"><span class="emoji">🛹</span> Board Used</label>
+      <select id="board" [(ngModel)]="board" name="board" required>
+        <option value="" disabled selected>Select board</option>
+        <option *ngFor="let b of boardTypes" [value]="b">{{ b }}</option>
+      </select>
+    </div>
+
+    <div class="form-row form-waves">
+      <label for="waveCount"><span class="emoji">🌊</span> Wave Count</label>
+      <input
+        id="waveCount"
+        type="number"
+        min="0"
+        [(ngModel)]="waveCount"
+        name="waveCount"
+        required
+        placeholder="Number"
+      />
+    </div>
+
+    <div class="form-row form-mood">
+      <label><span class="emoji">😃</span> Mood</label>
+      <div class="icon-picker">
+        <button
+          *ngFor="let opt of moodOptions"
+          type="button"
+          class="icon-btn"
+          [class.selected]="isSelected(mood, opt.key)"
+          (click)="mood = opt.key"
+          [attr.aria-label]="opt.label"
+          [title]="opt.label"
+        >
+          <span class="icon">{{ opt.icon }}</span>
+          <span class="icon-label">{{ opt.label }}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-row form-swell">
+      <label for="swell"><span class="emoji">🌊</span> Swell</label>
+      <input
+        id="swell"
+        type="text"
+        [(ngModel)]="swell"
+        name="swell"
+        placeholder="e.g. 3-5 ft, Head high"
+      />
+    </div>
+
+    <div class="form-row form-wind">
+      <label><span class="emoji">💨</span> Wind</label>
+      <div class="icon-picker">
+        <button
+          *ngFor="let opt of windOptions"
+          type="button"
+          class="icon-btn"
+          [class.selected]="isSelected(wind, opt.key)"
+          (click)="wind = opt.key"
+          [attr.aria-label]="opt.label"
+          [title]="opt.label"
+        >
+          <span class="icon">{{ opt.icon }}</span>
+          <span class="icon-label">{{ opt.label }}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-row form-tide">
+      <label><span class="emoji">🌗</span> Tide</label>
+      <div class="icon-picker">
+        <button
+          *ngFor="let opt of tideOptions"
+          type="button"
+          class="icon-btn"
+          [class.selected]="isSelected(tide, opt.key)"
+          (click)="tide = opt.key"
+          [attr.aria-label]="opt.label"
+          [title]="opt.label"
+        >
+          <span class="icon">{{ opt.icon }}</span>
+          <span class="icon-label">{{ opt.label }}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-row form-notes">
+      <label for="notes"><span class="emoji">📝</span> Notes</label>
+      <textarea
+        id="notes"
+        [(ngModel)]="notes"
+        name="notes"
+        rows="2"
+        maxlength="280"
+        placeholder="Any comments, fun stories, conditions, etc."
+      ></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button class="save-btn" type="submit">
+        {{ isEditMode ? 'Update Session' : 'Save Session' }}
+      </button>
+      <button class="cancel-btn" type="button" (click)="cancel()">Cancel</button>
+    </div>
+
+    <div class="form-error" *ngIf="formError">
+      {{ formError }}
+    </div>
+  </form>
+</section>
