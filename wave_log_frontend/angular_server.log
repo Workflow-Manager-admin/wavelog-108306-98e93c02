@@ -9,40 +9,39 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  35.58 kB | 
+main.js              | main             |  58.43 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 125.88 kB
+                     | Initial total    | 148.73 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-X7DAXGX6.mjs   | -                |  35.95 kB | 
+chunk-KDPZDLZG.mjs   | -                |  58.80 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.659 seconds]
+Application bundle generation complete. [2.759 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
-9:42:55 AM [vite] (client) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names       |  Raw size
-main.js             | main        |  39.30 kB | 
+main.js             | main        |  70.54 kB | 
 
 
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-C7SCZLGH.mjs  | -           |  39.67 kB | 
+chunk-J6ILSG35.mjs  | -           |  70.90 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
-Application bundle generation complete. [0.557 seconds]
+Application bundle generation complete. [0.786 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -50,61 +49,82 @@ Page reload sent to client(s).
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  39.30 kB | 
+main.js              | main             |  70.54 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 129.60 kB
+                     | Initial total    | 160.83 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-C7SCZLGH.mjs   | -                |  39.67 kB | 
+chunk-J6ILSG35.mjs   | -                |  70.90 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.195 seconds]
+Application bundle generation complete. [0.332 seconds]
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names       |  Raw size
-main.js             | main        |  53.59 kB | 
+main.js             | main        |  74.84 kB | 
 
 
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-SUUREBHA.mjs  | -           |  53.95 kB | 
+chunk-VKGSOTYY.mjs  | -           |  75.20 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
-Application bundle generation complete. [0.416 seconds]
+Application bundle generation complete. [0.399 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names       |  Raw size
-main.js             | main        |  58.43 kB | 
+main.js             | main        |  74.84 kB | 
 
 
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-EZTPPZTO.mjs  | -           |  58.80 kB | 
+chunk-DWXOZEMK.mjs  | -           |  75.21 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
-Application bundle generation complete. [0.469 seconds]
+Application bundle generation complete. [0.269 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  74.94 kB | 
+
+
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-KDPZDLZG.mjs  | -           |  58.80 kB | 
+chunk-22D4ANQZ.mjs  | -           |  75.30 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
-Application bundle generation complete. [0.328 seconds]
+Application bundle generation complete. [0.347 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  74.94 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-DFDLHQAP.mjs  | -           |  75.30 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.264 seconds]
 
 Page reload sent to client(s).

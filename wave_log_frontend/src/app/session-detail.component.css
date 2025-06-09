@@ -1,0 +1,143 @@
+.session-detail-container {
+  max-width: 480px;
+  margin: 3rem auto 2rem;
+  background: var(--surface, #f0f8ff);
+  border-radius: 22px;
+  box-shadow: 0 2px 24px #a0c7e1a3;
+  border: 2px solid #c8e1f6;
+  padding: 0.3rem 0.7rem 2rem 0.7rem;
+  min-height: 350px;
+}
+.session-detail-card {
+  background: linear-gradient(126deg, #e3f2fd 80%, #F5E9D0 120%);
+  border-radius: 18px;
+  box-shadow: 0 1.5px 12px #aee1f977;
+  padding: 2.2rem 1.8rem 1.65rem;
+  color: var(--text, #184366);
+}
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+.detail-header h2 {
+  font-size: 1.51rem;
+  color: var(--primary, #3A8DDE);
+  margin: 0 0 0.12em 0;
+  font-weight: 700;
+}
+.action-row {
+  display: flex;
+  gap: 0.55em;
+}
+.edit-btn, .delete-btn {
+  font-size: 0.97em;
+  font-weight: 600;
+  padding: 0.42em 1.1em;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 7px #d7edf319;
+  margin-bottom: 0.25em;
+  transition: background 0.17s, color 0.14s, box-shadow 0.16s;
+}
+.edit-btn {
+  background: linear-gradient(99deg,#3A8DDE 60%, #20B2AA 120%);
+  color: #fff;
+  border: 1.5px solid #b1d4f3;
+}
+.edit-btn:hover, .edit-btn:focus {
+  background: linear-gradient(99deg,#299ee0 60%, #17aab0 120%);
+  color: #f5ffe6;
+}
+.delete-btn {
+  background: #F5E9D0;
+  color: #a75555;
+  border: 1.5px solid #e4b1b1;
+}
+.delete-btn:hover, .delete-btn:focus {
+  background: #f6dada;
+  color: #930e0e;
+}
+.detail-fields {
+  margin-top: 1.36em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.74em;
+}
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  font-size: 1.08em;
+  color: #184366;
+  padding-bottom: 0.1em;
+}
+.detail-row .icon {
+  font-size: 1.2em;
+  margin-right: 0.27em;
+}
+.detail-row .label {
+  font-weight: 600;
+  color: var(--accent, #20B2AA);
+  min-width: 72px;
+}
+.detail-row .value {
+  color: #21659b;
+  font-weight: 500;
+}
+.detail-row .emoji {
+  margin-right: 0.13em;
+  font-size: 1.14em;
+  vertical-align: text-bottom;
+}
+.detail-row.mood-field .value { color: #3A8DDE; }
+.detail-row.mood-field .emoji {
+  filter: drop-shadow(0 0.5px 1px #cde6fd77);
+}
+.detail-row.notes-field .value {
+  font-style: italic;
+  color: #205468;
+  font-size: 1.01em;
+}
+.not-found-card {
+  text-align: center;
+  padding: 2.85em 0.6em 3em 0.6em;
+}
+.sad-wave {
+  margin: 0 auto 0.7em auto;
+  display: block;
+}
+.not-found-card h3 {
+  color: #a75353;
+  font-size: 1.26em;
+  margin-bottom: 0.3em;
+}
+.not-found-card p {
+  color: #876b6b;
+  font-size: 1.03em;
+  margin-bottom: 1.3em;
+}
+.back-home-btn {
+  display: inline-block;
+  background: linear-gradient(94deg, #3A8DDE 60%, #20B2AA 120%);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.57em 1.4em;
+  border-radius: 19px;
+  box-shadow: 0 2px 15px #92dcff27;
+  text-decoration: none;
+  font-size: 1.01em;
+  border: none;
+  transition: background 0.18s;
+}
+.back-home-btn:hover, .back-home-btn:focus {
+  background: linear-gradient(94deg, #299ee0 60%, #17aab0 120%);
+}
+@media (max-width: 599px) {
+  .session-detail-card {
+    padding: 1.3rem 0.6rem 1.18rem;
+  }
+  .detail-header h2 { font-size: 1.12rem; }
+}
